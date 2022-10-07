@@ -6,6 +6,14 @@ import java.util.Scanner;
 
 public class Einstiegsbeispiel {
 
+    /*
+    public static void main(String[] args) {
+        int [] array1 = {1};
+        binary2decimal(array1);
+    }
+
+     */
+
     public static int binary2decimal(int[] binaryArray) {
         int dezimal = 0;
         int potenz = 1;
@@ -14,6 +22,7 @@ public class Einstiegsbeispiel {
             dezimal = dezimal + binaryArray[i] * potenz;
             potenz = potenz * 2;
         }
+        //System.out.println(dezimal);
         return dezimal;
     }
 

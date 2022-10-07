@@ -8,16 +8,23 @@ import org.junit.jupiter.api.Test;
 public class EinstiegsbeispielTest {
 
     @Test
-    public void TestValid1 (){
-        int [] binaryArray1 = {1, 0, 1, 1};
-        int [] binaryArray2 = {1, 1, 0, 1, 1, 0};
+    public void TestValidFunction1() {
+        int[] binaryArray1 = {1, 0, 1, 1};
+        int[] binaryArray2 = {1, 1, 0, 1, 1, 0};
 
         Assertions.assertEquals(11, Einstiegsbeispiel.binary2decimal(binaryArray1));
         Assertions.assertEquals(54, Einstiegsbeispiel.binary2decimal(binaryArray2));
 
     }
 
+    @Test
+    public void TestVaildFunction2() {
+        int[] binaryArray3 = {0};
+        int[] binaryArray4 = {1};
+        Assertions.assertEquals(0, Einstiegsbeispiel.binary2decimal(binaryArray3));
+        Assertions.assertEquals(1, Einstiegsbeispiel.binary2decimal(binaryArray4));
 
+    }
 
 
 }
