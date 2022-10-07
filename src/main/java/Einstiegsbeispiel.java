@@ -8,7 +8,6 @@ public class Einstiegsbeispiel {
     public static void main(String[] args) {
         int[] binaryArray = {1, 1, 1, 0};
         BinaryToDecimal(binaryArray);
-
     }
 
     public static int BinaryToDecimal(int[] binaryArray) {
