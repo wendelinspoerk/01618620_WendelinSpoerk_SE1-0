@@ -28,13 +28,16 @@ public class EinstiegsbeispielTest {
 
     @Test
     public void TestFailureFunction1() {
-        int [] binaryArrray5 = {1, 2};
+        int[] binaryArrray5 = {1, 2};
         Assertions.assertEquals(-1, Einstiegsbeispiel.binary2decimal(binaryArrray5));
     }
 
     @Test
     public void TestFailureFunction2() {
-
+        int[] binaryArray6 = null;
+        Exception exception = Assertions.assertThrows(NullPointerException.class, () -> {
+            Einstiegsbeispiel.binary2decimal(binaryArray6);
+        });
     }
 
 
