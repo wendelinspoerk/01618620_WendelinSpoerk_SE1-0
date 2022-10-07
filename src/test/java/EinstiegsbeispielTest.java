@@ -26,5 +26,16 @@ public class EinstiegsbeispielTest {
 
     }
 
+    @Test
+    public void TestFailureFunction1() {
+        int [] binaryArrray5 = {1, 2};
+        Assertions.assertEquals(this, Einstiegsbeispiel.binary2decimal(binaryArrray5));
+    }
+
+    @Test
+    public void TestFailureFunction2() {
+
+    }
+
 
 }
